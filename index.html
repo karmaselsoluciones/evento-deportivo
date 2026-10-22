@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SportShots: pasión deportiva en imágenes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="logo.jpg" alt="SportShots Logo" class="logo-img" />
+        <span class="logo-text"><span class="logo-sport">Sport</span><span class="logo-shots">Shots</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link active">Inicio</a></li>
+        <li><a href="#" class="nav-link">Eventos</a></li>
+        <li><a href="#" class="nav-link">Galería</a></li>
+        <li><a href="#" class="nav-link">Planes</a></li>
+        <li><a href="#" class="nav-link">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-icon" aria-label="Buscar"><i class="fas fa-search"></i></button>
+        <a href="#" class="btn-login">Iniciar sesión</a>
+        <a href="#" class="btn-register">Registrarse</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-label">CAPTURAMOS LA PASIÓN DEL DEPORTE</p>
+      <h1 class="hero-title">
+        Tus momentos deportivos,
+        <span class="hero-highlight">en imágenes</span>
+      </h1>
+      <p class="hero-subtitle">
+        Explora nuestra galería de eventos de porristas, gimnasia y más.<br />
+      </p>
+      <div class="hero-search">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" placeholder="Buscar por evento, equipo, nombre..." />
+        <button class="btn-buscar">Buscar</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="imagenes/portada/images.jpg" alt="Deportista en acción" />
+    </div>
+  </section>
+
+  <!-- ========== EVENTOS DESTACADOS ========== -->
+  <section class="section eventos-section">
+    <div class="section-container">
+      <div class="eventos-left">
+        <div class="section-header">
+          <h2 class="section-title">Eventos destacados</h2>
+          <a href="#" class="see-all">Ver todos los eventos <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="eventos-grid">
+          <!-- Card 1 -->
+          <div class="evento-card">
+            <div class="evento-img-wrap">
+              <img src="imagenes/eventos/0.jpg" alt="Campeonato Nacional de Porristas" />
+            </div>
+            <div class="evento-info">
+              <p class="evento-date"><i class="far fa-calendar"></i> 12 Oct 2025</p>
+              <h3 class="evento-name">Campeonato Nacional de Porristas</h3>
+              <p class="evento-loc"><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="evento-card">
+            <div class="evento-img-wrap">
+              <img src="imagenes/eventos/1.jpg" alt="Torneo de Gimnasia Artística" />
+            </div>
+            <div class="evento-info">
+              <p class="evento-date"><i class="far fa-calendar"></i> 28 Sep 2025</p>
+              <h3 class="evento-name">Torneo de Gimnasia Artística</h3>
+              <p class="evento-loc"><i class="fas fa-map-marker-alt"></i> Medellín, Colombia</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="evento-card">
+            <div class="evento-img-wrap">
+              <img src="imagenes/eventos/2.jpg" alt="Open Cheer Challenge" />
+            </div>
+            <div class="evento-info">
+              <p class="evento-date"><i class="far fa-calendar"></i> 14 Sep 2025</p>
+              <h3 class="evento-name">Open Cheer Challenge</h3>
+              <p class="evento-loc"><i class="fas fa-map-marker-alt"></i> Cali, Colombia</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="evento-card">
+            <div class="evento-img-wrap">
+              <img src="imagenes/eventos/3.jpg" alt="Copa de Gimnasia Rítmica" />
+            </div>
+            <div class="evento-info">
+              <p class="evento-date"><i class="far fa-calendar"></i> 30 Ago 2025</p>
+              <h3 class="evento-name">Copa de Gimnasia Rítmica</h3>
+              <p class="evento-loc"><i class="fas fa-map-marker-alt"></i> Bucaramanga, Colombia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visor de imagen lateral -->
+      <div class="galeria-viewer">
+        <div class="viewer-top">
+          <span class="viewer-counter">1 / 24</span>
+          <div class="viewer-actions">
+            <button class="viewer-btn-icon"><i class="far fa-heart"></i></button>
+            <button class="viewer-btn-icon"><i class="fas fa-expand"></i></button>
+          </div>
+        </div>
+        <div class="viewer-img-wrap">
+          <button class="viewer-nav prev" id="viewerPrev"><i class="fas fa-chevron-left"></i></button>
+          <img src="imagenes/eventos/4.jpg" alt="Gimnasia Artística" id="viewerImg" />
+          <div class="viewer-watermark">SportShots</div>
+          <button class="viewer-nav next" id="viewerNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="viewer-caption">
+          <h4>Gimnasia Artística - Torneo Nacional</h4>
+          <p>Medellín, Colombia | 28 Sep 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CÓMO FUNCIONA ========== -->
+  <section class="section como-section">
+    <div class="section-container">
+      <div class="como-left">
+        <div class="section-header">
+          <h2 class="section-title">¿Cómo funciona?</h2>
+          <a href="#" class="see-all">Ver más información <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="pasos-grid">
+          <div class="paso">
+            <div class="paso-num-icon">
+              <span class="paso-num">1</span>
+              <div class="paso-icon-circle"><i class="fas fa-camera"></i></div>
+            </div>
+            <h3 class="paso-title">Explora los eventos</h3>
+            <p class="paso-desc">Busca por fecha, deporte o evento y encuentra las fotos que te gustan.</p>
+          </div>
+          <div class="paso">
+            <div class="paso-num-icon">
+              <span class="paso-num">2</span>
+              <div class="paso-icon-circle"><i class="fas fa-shopping-cart"></i></div>
+            </div>
+            <h3 class="paso-title">Elige tu opción</h3>
+            <p class="paso-desc">Descarga en alta calidad o mira gratis con marca de agua.</p>
+          </div>
+          <div class="paso">
+            <div class="paso-num-icon">
+              <span class="paso-num">3</span>
+              <div class="paso-icon-circle"><i class="fas fa-download"></i></div>
+            </div>
+            <h3 class="paso-title">Disfruta tus imágenes</h3>
+            <p class="paso-desc">Recibe tus fotos al instante o descárgalas desde tu cuenta.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="como-right">
+        <ul class="features-list">
+          <li class="feature-item">
+            <div class="feature-icon purple"><i class="fas fa-camera"></i></div>
+            <div>
+              <strong>Fotografía profesional</strong>
+              <p>Imágenes de alta calidad, capturando cada detalle.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon yellow"><i class="far fa-star"></i></div>
+            <div>
+              <strong>Eventos variados</strong>
+              <p>Porristas, gimnasia, y mucho más.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon green"><i class="fas fa-shield-alt"></i></div>
+            <div>
+              <strong>Compra segura</strong>
+              <p>Pagos confiables y entrega inmediata.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon blue"><i class="fas fa-mobile-alt"></i></div>
+            <div>
+              <strong>Acceso desde cualquier lugar</strong>
+              <p>En tu celular, tablet o computador.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<!-- ==== PRÓXIMOS EVENTOS Y CONCURSOS ==== -->
+<section class="section planes-section" id="proximos-eventos">
+  <div class="section-container">
+    <div class="planes-left">
+      <h2 class="section-title" id="titulo-eventos">Próximos eventos y concursos</h2>
+
+      <div class="planes-grid">
+
+        <!-- Anuncio 1 -->
+        <article class="plan-card">
+          <div class="plan-header">
+            <div class="plan-icon purple-icon">
+              <i class="far fa-calendar"></i>
+            </div>
+            <div>
+              <h3 class="plan-name">[Nombre del evento]</h3>
+              <p class="plan-sub">[Disciplina deportiva]</p>
+            </div>
+          </div>
+
+          <ul class="plan-features">
+            <li>
+              <i class="far fa-calendar"></i>
+              [Fecha del evento]
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              [Ciudad y lugar]
+            </li>
+          </ul>
+
+          <p class="paso-desc">[Breve descripción del evento]</p>
+        </article>
+
+        <!-- Anuncio 2 -->
+        <article class="plan-card">
+          <div class="plan-header">
+            <div class="plan-icon purple-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div>
+              <h3 class="plan-name">[Nombre del concurso]</h3>
+              <p class="plan-sub">[Disciplina deportiva]</p>
+            </div>
+          </div>
+
+          <ul class="plan-features">
+            <li>
+              <i class="far fa-calendar"></i>
+              [Fecha del concurso]
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              [Ciudad y lugar]
+            </li>
+          </ul>
+
+          <p class="paso-desc">[Breve descripción del concurso]</p>
+        </article>
+
+        <!-- Anuncio 3 -->
+        <article class="plan-card">
+          <div class="plan-header">
+            <div class="plan-icon purple-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div>
+              <h3 class="plan-name">[Nombre de otro evento]</h3>
+              <p class="plan-sub">[Disciplina deportiva]</p>
+            </div>
+          </div>
+
+          <ul class="plan-features">
+            <li>
+              <i class="far fa-calendar"></i>
+              [Fecha del evento]
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              [Ciudad y lugar]
+            </li>
+          </ul>
+
+          <p class="paso-desc">[Breve descripción del evento]</p>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="logo.jpg" alt="SportShots Logo" class="logo-img" />
+        <span class="logo-text"><span class="logo-sport">Sport</span><span class="logo-shots">Shots</span></span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Galería</a></li>
+        <li><a href="#">Planes</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+      <div class="footer-right">
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="footer-copy">© 2025 SportShots. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script type="module">
+    import { createTimeline, stagger, splitText } from 'https://esm.sh/animejs';
+
+    const { chars } = splitText('#titulo-eventos', {
+      chars: {
+        wrap: 'clip',
+        clone: 'bottom'
+      },
+    });
+
+    createTimeline()
+      .add(chars, {
+        y: '-100%',
+        loop: true,
+        loopDelay: 350,
+        duration: 1900,
+        ease: 'inOut(2)',
+      }, stagger(150, { from: 'first' }));
+  </script>
+
+</body>
+</html>
